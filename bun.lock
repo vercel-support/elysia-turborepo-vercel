@@ -1,12 +1,7 @@
 {
   "lockfileVersion": 0,
   "workspaces": {
-    "": {
-      "devDependencies": {
-        "bun-types": "latest",
-        "typescript": "^5.9.3",
-      },
-    },
+    "": {},
     "apps/api": {
       "name": "@elysia-on-vercel/api",
       "version": "1.0.50",

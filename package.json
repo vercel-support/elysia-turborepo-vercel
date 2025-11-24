@@ -4,17 +4,7 @@
   "private": true,
   "description": "Elysia on Vercel workspace",
   "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "dev": "bun --filter api dev",
-    "build": "bun run --filter '*' build",
-    "test": "bun run --filter '*' test"
-  },
-  "devDependencies": {
-    "bun-types": "latest",
-    "typescript": "^5.9.3"
-  }
+    "apps/*"
+  ]
 }
 
