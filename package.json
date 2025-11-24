@@ -1,16 +1,20 @@
 {
-  "name": "bun-elysia-vc",
-  "type": "module",
-  "version": "1.0.50",
+  "name": "elysia-on-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Elysia on Vercel workspace",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
+    "dev": "bun --filter api dev",
+    "build": "bun run --filter '*' build",
+    "test": "bun run --filter '*' test"
   },
   "devDependencies": {
     "bun-types": "latest",
     "typescript": "^5.9.3"
   }
 }
+
