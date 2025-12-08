@@ -216,7 +216,7 @@ const app = new Elysia()
 
   // POST /api/users - Create a new user
   // This endpoint validates against the User interface from shared package
-  .post("/api/users", ({ body }): ApiResponse<User> => {
+  .post("/api/users", ({ body }: { body: { email: string; name: string; metadata?: Record<string, unknown> } }): ApiResponse<User> => {
     const newUser: User = {
       id: `user-${Date.now()}` as UserId,
       email: body.email,
