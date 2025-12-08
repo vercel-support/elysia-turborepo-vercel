@@ -1,26 +1,17 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "ES2021",
-    "module": "ES2022",
-    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
     "composite": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "types": ["bun-types"],
     "baseUrl": ".",
     "paths": {
-      "@elysia-on-vercel/shared": ["../../packages/shared/src/index.ts"],
-      "@elysia-on-vercel/shared/*": ["../../packages/shared/src/*"]
-    }
+      "#*": ["./src/*"]
+    },
+    "types": ["bun-types"]
   },
-  "references": [
-    { "path": "../../packages/shared" }
-  ],
-  "include": ["src/**/*"]
+  "references": [{ "path": "../../packages/shared" }],
+  "include": ["src"]
 }

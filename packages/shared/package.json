@@ -13,10 +13,9 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "clean": "rm -rf dist .tsbuildinfo"
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
   }
 }
-

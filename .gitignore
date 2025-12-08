@@ -11,6 +11,7 @@ dist
 build
 .next
 .turbo
+*.tsbuildinfo
 
 # Environment
 .env
