@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "bun run --watch src/index.ts",
     "build": "tsc -b",
-    "vercel-build": "cd ../../ && bunx turbo build --filter=@elysia-on-vercel/api...",
+    "vercel-build": "cd ../../ && bunx turbo build --filter=@elysia-on-vercel/api... &&  echo \"vercel-build called\"",
     "clean": "rm -rf dist .tsbuildinfo",
     "typecheck": "tsc --noEmit"
   },
