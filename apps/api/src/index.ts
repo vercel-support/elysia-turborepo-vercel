@@ -15,21 +15,6 @@ import {
   DEFAULT_PAGE_SIZE,
 } from "@elysia-on-vercel/shared";
 
-/**
- * This file demonstrates the @vercel/node TypeScript project references issue.
- * 
- * When deployed to Vercel:
- * 1. The build command (tsc -b) completes successfully
- * 2. @vercel/node performs a secondary TypeScript compilation
- * 3. The fixConfig() function in @vercel/node strips 'composite' and related options
- * 4. Types from @elysia-on-vercel/shared resolve as 'unknown' or '{}'
- * 5. Build fails with TS2769 or similar type errors
- * 
- * Expected error during Vercel deployment:
- * "Error: src/index.ts - error TS2769: No overload matches this call.
- *  Argument of type 'unknown' is not assignable to..."
- */
-
 // In-memory store for demonstration
 const users = new Map<UserId, User>();
 const posts = new Map<PostId, Post>();
