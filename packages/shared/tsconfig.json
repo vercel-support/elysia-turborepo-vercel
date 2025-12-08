@@ -8,15 +8,12 @@
     "composite": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "types": ["bun-types"],
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noEmitOnError": false
   },
-  "include": ["src"],
-  "references": [
-    { "path": "../../packages/shared" }
-  ]
+  "include": ["src"]
 }
+

@@ -4,7 +4,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".vercel/**", "dist/**"]
+      "outputs": [".vercel/**", "dist/**", "tsconfig.tsbuildinfo"]
     },
     "dev": {
       "cache": false,

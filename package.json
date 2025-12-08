@@ -4,7 +4,8 @@
   "private": true,
   "description": "Elysia on Vercel workspace",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "dev": "turbo run dev",
@@ -16,4 +17,3 @@
   },
   "packageManager": "bun@1.2.2"
 }
-
