@@ -2,18 +2,20 @@
   "name": "elysia-on-vercel",
   "version": "1.0.0",
   "private": true,
-  "description": "Elysia on Vercel workspace",
+  "description": "Reproduction: @vercel/node breaks TypeScript project references (composite: true)",
   "workspaces": [
+    "packages/*",
     "apps/*"
   ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "test": "turbo run test"
+    "clean": "turbo run clean",
+    "typecheck": "tsc -b"
   },
   "devDependencies": {
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "^5.9.3"
   },
   "packageManager": "bun@1.2.2"
 }
-

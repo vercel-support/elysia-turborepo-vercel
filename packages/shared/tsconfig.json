@@ -11,11 +11,8 @@
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "types": ["bun-types"]
+    "skipLibCheck": true
   },
-  "references": [
-    { "path": "../../packages/shared" }
-  ],
   "include": ["src/**/*"]
 }
+
