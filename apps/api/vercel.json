@@ -1,13 +1,3 @@
 {
-  "bunVersion": "1.x",
-  "buildCommand": "cd ../.. && bun install && bun run build",
-  "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/src" }
-  ],
-  "functions": {
-    "src/index.ts": {
-      "runtime": "@vercel/node@3.x"
-    }
-  }
+  "bunVersion": "1.x"
 }
