@@ -150,21 +150,7 @@ const app = new Elysia()
       <body>
         <div class="container">
           <span class="badge">API ${API_VERSION}</span>
-          <h1>🐛 @vercel/node Issue Reproduction</h1>
           
-          <div class="issue-box">
-            <h2>TypeScript Project References Broken</h2>
-            <p>
-              This monorepo uses <code>composite: true</code> for TypeScript project references.
-              When deploying to Vercel, <code>@vercel/node</code> strips this option during its
-              secondary compilation, causing types from workspace packages to resolve as <code>unknown</code>.
-            </p>
-            <div class="code-block">
-              <span class="comment">// Error during Vercel's secondary compilation:</span><br>
-              <span class="keyword">error</span> TS2769: No overload matches this call.<br>
-              Argument of type '<span class="string">unknown</span>' is not assignable to...
-            </div>
-          </div>
 
           <h2>Test Endpoints</h2>
           <div class="endpoints">
