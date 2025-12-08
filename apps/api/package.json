@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
-    "build": "tsc -b --force"
+    "build": "tsc -b"
   },
   "dependencies": {
     "@elysia-on-vercel/shared": "workspace:*",
