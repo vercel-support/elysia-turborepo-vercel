@@ -73,13 +73,15 @@ elysia-turborepo-vercel/
 bun install
 ```
 
+> **Note:** If you encounter stale cache issues, run `bunx turbo run clean` or delete `.turbo` directories.
+
 ### 2. Build locally (this works!)
 
 ```bash
-bun run build
+bunx turbo run build --force
 ```
 
-The build succeeds because `tsc -b` correctly uses project references.
+The build succeeds because `tsc -b` correctly uses project references + `paths` mapping.
 
 ### 3. Deploy to Vercel (this fails!)
 
